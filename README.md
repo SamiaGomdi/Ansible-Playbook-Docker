@@ -5,12 +5,12 @@ This Playbook file is used to automate building docker image, since we are using
 
 The file should do the following:
 
-1- Stop the current running container if exist
-2- Remove the stopped container if exist
-3- Remove the built image if exist
-4- Build a new image from the Dockerfile
-5- Create a tag to the image
-6- Push the new built image to Dockerhub
-7- Run a container from the new built image
+-  Stop the current running container if exist
+-  Remove the stopped container if exist
+-  Remove the built image if exist
+-  Build a new image from the Dockerfile
+-  Create a tag to the image
+-  Push the new built image to Dockerhub
+-  Run a container from the new built image
 
 So as you see this file is idempotent file that can run miltiple times without changing the output plus you can use only one image name and one container name so you don't get lost by the number of images and names that you are going to build with different names.
